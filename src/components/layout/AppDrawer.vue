@@ -22,7 +22,7 @@ nextTick(() => {
 </script>
 
 <template>
-  <v-navigation-drawer v-model="drawer" :expand-on-hover="rail" :rail="rail">
+  <v-navigation-drawer v-model="drawer" :expand-on-hover="rail" :rail="rail" elevation="5">
     <template #prepend>
       <v-list dense nav>
         <v-list-item class="pa-1">
@@ -43,7 +43,7 @@ nextTick(() => {
         </v-list-item>
       </v-list>
     </template>
-    <v-list nav density="compact">
+    <v-list nav density="comfortable">
       <AppDrawerItem v-for="route in routes" :key="route.name" :item="route" />
     </v-list>
     <v-spacer />
